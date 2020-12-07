@@ -1,16 +1,9 @@
 {
-  "name": "app1",
+  "name": "app2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "setup": "pm2 deploy ecosystem.config.js production setup",
-    "fetch": " pm2 deploy ecosystem.config.js production",
-    "reboot": "pm2 deploy production exec 'pm2 startup'",
-    "save": "pm2 deploy production exec 'pm2 save'",
-    "update": "pm2 deploy production update",
-    "stop": "pm2 deploy production exec 'pm2 stop all'",
-    "restart": "cross-env NODE_ENV=production pm2 deploy production exec 'pm2 restart all'",
-    "dev": "cross-env NODE_ENV=dev  nodemon ./bin/www",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -19,8 +12,5 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.2"
   }
 }
