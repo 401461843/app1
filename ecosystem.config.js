@@ -5,7 +5,7 @@ module.exports = {
 		'name': 'app1',
 		'instances': 'max',
 		'exec_mode': 'cluster',
-		'autorestart': false,
+		'autorestart': true,
 		'env': {
 			'NODE_ENV': 'production',
 			'PORT':3000
